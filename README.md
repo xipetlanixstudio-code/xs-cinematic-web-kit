@@ -1,32 +1,30 @@
 # XS Cinematic Web Kit
 
-Early-stage MIT-licensed browser motion toolkit by Xipetlanix Studio.
+Experimental MIT-licensed browser motion toolkit by Xipetlanix Studio. / Biblioteca experimental de movimiento web.
+
+## Demo / Demostración
+[GitHub Pages](https://xipetlanixstudio-code.github.io/xs-cinematic-web-kit/)
 
 ## Features / Características
-- Normalized scroll progress / Progreso normalizado.
-- Scroll-driven parallax and reveal / Parallax y revelación.
-- Native horizontal carousel controls / Carrusel horizontal.
-- Reduced-motion support / Movimiento reducido.
+- Scroll progress, parallax layers and reveal effects.
+- Sticky scenes and numeric keyframe interpolation.
+- Native horizontal carousel, optional timed cycling, pause and wrap at ends (not seamless).
+- Opt-in video scrubbing API (requires your own seekable video).
+- Reduced-motion support and cleanup callbacks.
 
-## Run locally / Ejecutar localmente
-
-With Node.js 20+ and Python 3:
-
+## Local development / Desarrollo local
+Requires Node.js 20+ and Python 3.
 ```sh
 npm test
 python3 -m http.server 8000
 ```
-
-Open http://localhost:8000 to explore the demo.
+Open http://localhost:8000.
 
 ## Usage / Uso
+Load src/motion.css and import the desired functions from src/index.js.
+See [API examples](docs/getting-started.md), [changelog](CHANGELOG.md) and [contributing](CONTRIBUTING.md).
 
-Load src/motion.css and import mountMotion and mountCarousel from src/index.js. Mark sections with data-xs-motion="reveal" or data-xs-motion="parallax" (with a child data-xs-layer). Call mountMotion(), then add xs-enhanced to the document element. Both mounting functions return cleanup callbacks.
-
-See [the demo](index.html), [getting started](docs/getting-started.md) and [contributing](CONTRIBUTING.md).
-
-## Status / Estado
-
-Experimental v0.1.0. Browser validation and npm publication are pending. No external runtime dependencies. Contributions welcome.
+## Status
+v0.2.0 experimental. No external runtime dependencies. Browser validation and npm publication pending. The package remains private in package.json to prevent accidental registry publication; the GitHub repository is public.
 
 MIT license.
