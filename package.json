@@ -1,0 +1,11 @@
+{
+  "name": "xs-cinematic-web-kit",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "test": "node --test"
+  },
+  "exports": "./src/scroll-progress.js"
+}
