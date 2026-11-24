@@ -3,7 +3,9 @@
 Experimental MIT-licensed browser motion toolkit by Xipetlanix Studio. / Biblioteca experimental de movimiento web.
 
 ## Demo / Demostración
-[GitHub Pages](https://xipetlanixstudio-code.github.io/xs-cinematic-web-kit/)
+[Scroll demonstration](https://xipetlanixstudio-code.github.io/xs-cinematic-web-kit/) · [Interactive Motion Lab](https://xipetlanixstudio-code.github.io/xs-cinematic-web-kit/lab/)
+
+The lab includes adjustable parallax displacement, crossfade boundaries, timeline keyframes and continuous rail speed, with copyable integration examples. / El laboratorio permite experimentar con parámetros y copiar ejemplos.
 
 ## Features / Características
 - Scroll progress, parallax layers and reveal effects.
@@ -26,6 +28,6 @@ Load src/motion.css and import the desired functions from src/index.js.
 See [API examples](docs/getting-started.md), [changelog](CHANGELOG.md) and [contributing](CONTRIBUTING.md).
 
 ## Status
-v0.3.0 experimental. No external runtime dependencies. Browser validation and npm publication pending. The package remains private in package.json to prevent accidental registry publication; the GitHub repository is public.
+v0.4.0 experimental. No external runtime dependencies. Browser validation and npm publication pending. The package remains private in package.json to prevent accidental registry publication; the GitHub repository is public.
 
 MIT license.
