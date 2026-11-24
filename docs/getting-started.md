@@ -29,3 +29,21 @@ createVideoScrubber(video) returns update(progress) and destroy(). Use a muted, 
 All mount functions return cleanup callbacks. Call them before removing components.
 
 En español: las escenas sincronizan el desplazamiento con una línea temporal; el carrusel permite activar la reproducción manualmente y se detiene durante la interacción. El video necesita un archivo propio. Las APIs son experimentales y aún requieren validación en navegadores.
+
+## Continuous rail / Banda continua
+
+Use one group of static non-interactive items inside a native horizontal scroll container:
+
+```html
+<div data-xs-rail tabindex="0" aria-label="Motion samples">
+  <div data-xs-rail-group>
+    <!-- Static tiles, enough to exceed the viewport width -->
+  </div>
+</div>
+```
+
+Import mountInfiniteRail from src/index.js. Pass previous, next and toggle buttons via options. Default speed is 24 pixels per second; playback is off unless explicitly enabled. Autoplay requires a pause control. Keep interactive cards in the native mountCarousel implementation instead. Clones are inert and hidden from assistive technology. Reduced motion disables continuous cycling and removes clones. Call the returned cleanup function on unmount.
+
+For a crossfade, import crossfade(progress, start, end) and apply its outgoing and incoming weights to decorative layers. Keep meaningful text available in the normal document flow.
+
+En español: la banda continua admite elementos estáticos, navegación manual y reproducción opcional lenta. No clones enlaces, formularios ni controles. La transición crossfade interpola dos capas decorativas. Ambos módulos son experimentales.
