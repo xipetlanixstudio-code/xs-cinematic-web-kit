@@ -1,0 +1,6 @@
+[data-xs-motion="parallax"] > [data-xs-layer] { transform: translate3d(0,var(--xs-offset,0px),0); }
+[data-xs-motion="reveal"] { transition: opacity .6s ease, translate .6s ease; }
+.xs-enhanced [data-xs-motion="reveal"]:not([data-xs-visible]):not(:focus-within) { opacity: 0; translate: 0 24px; }
+@media (prefers-reduced-motion: reduce) {
+  [data-xs-motion], [data-xs-layer] { transform: none !important; translate: none !important; opacity: 1 !important; transition: none !important; }
+}
