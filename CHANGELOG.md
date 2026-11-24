@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.4.0 — experimental
+
+- Added responsive Motion Lab with parameter controls and reusable snippets.
+- Added four interactive examples: parallax, crossfade, timeline and continuous rail.
+- Added keyboard-accessible controls, reset buttons and clipboard fallback.
+- Added static checks for lab markup and script references.
+
 ## 0.3.0 — experimental
 
 - Added continuous static-content rail, controlled in pixels per second.
