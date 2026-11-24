@@ -9,3 +9,8 @@
   [data-xs-scene] { min-height: auto; }
   [data-xs-sticky] { position: static; min-height: auto; }
 }
+
+/* Continuous rail: one original group; runtime clones are decorative and inert. */
+[data-xs-rail] { display:flex; position:relative; overflow-x:auto; scroll-behavior:auto; scroll-snap-type:none; direction:ltr; }
+[data-xs-rail-group] { display:flex; flex:0 0 auto; gap:var(--xs-rail-gap,16px); padding-inline-end:var(--xs-rail-gap,16px); }
+[data-xs-rail]:focus-visible { outline:2px solid currentColor; outline-offset:4px; }
